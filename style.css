@@ -109,39 +109,55 @@ body
     /*grid-template-columns: 100%; /* crea la cantidad de columnas con el porcentaje o px*/
     grid-template-rows:25% 35% 40%; /*da el tamaño indicado a las filas*/
     /*gap: 10px; /* da un espaciado a todos los elementos de la grilla columns grid para dar espacio a las columnas o row grid para las filas*/
-    width: 50vw;
-    height: 80vW;
-    margin: 5% auto;
+    width: 20vw;
+    height: 35vW;
+    margin: 4% auto;
     border-radius: 20px;
     } 
+    .container .border
+    {
+        border-top-left-radius: 5%;
+        border-top-right-radius: 5%;
+        background-image: url(img/santiago2_ccexpress.jpeg);
+        background-repeat: repeat;
+    }
     .border  img
     {
-        width: 22vw;
-        height: 22vw;
+        width: 7vw;
+        height: 7vw;
         border-radius: 50%;
         position: absolute;
-        margin-top: 8%;
-        margin-left: 15%; 
+        margin-top: 5%;
+        margin-left: 6%; 
     }
+    
     .name
     {
         padding-top: 22%;
-        padding-left: 32%;
-        font-size: 35px;
+        padding-left: 22%;
+        font-size: 25px;
+    }
+    .img
+    {
+        display: grid;
+        grid-template-columns: 45% 55%;
+        padding-top:5%;
+        padding-left: 27%;
+    
     }
     .social h4
     {
         margin-top: 0;
         margin-bottom: 0;
         margin-left: 2%;
-        font-size: 35px;
+        font-size: 25px;
     }
     .social p
     {
         margin-left: 2%;
         margin-right: 2%;
         text-align: justify;
-        font-size: 25px;
+        font-size: 15px;
     }
 }
 
