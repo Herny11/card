@@ -4,6 +4,9 @@ body
     margin: 0;
     box-sizing: border-box;
     background-image: url(img/fondo1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     
 }
 .container
@@ -13,9 +16,9 @@ body
    /*grid-template-columns: 100%; /* crea la cantidad de columnas con el porcentaje o px*/
    grid-template-rows:25% 35% 40%; /*da el tamaño indicado a las filas*/
    /*gap: 10px; /* da un espaciado a todos los elementos de la grilla columns grid para dar espacio a las columnas o row grid para las filas*/
-   width: 30vw;
-   height: 80vh;
-   margin: 1.5% auto;
+   width: 300px;
+   height: 500px;
+   margin: 5% auto;
    border-radius: 20px;
 } 
 .container div
@@ -31,12 +34,12 @@ body
 }
 .border  img
 {
-    width: 12vw;
-    height: 14vh;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     position: relative;
     top: 65%;
-    left: 29%; 
+    left: 33%; 
 }
 .dates
 {
@@ -47,7 +50,7 @@ body
 {
     font-size: 20px;
     font-weight: bold;
-    padding-top: 18%;
+    padding-top: 10%;
    
 }
 .name h4
@@ -103,186 +106,3 @@ body
     border-bottom-right-radius: 5%;
 }
 
-@media (min-width: 1290px)
-{
-    .container
-    {
-        /* repeat(cantidad, valor) minmax(valor minimo, valor maximo)*/
-    display: grid;/* trabaja como grilla puede contener columnas y filas*/
-    /*grid-template-columns: 100%; /* crea la cantidad de columnas con el porcentaje o px*/
-    grid-template-rows:25% 35% 40%; /*da el tamaño indicado a las filas*/
-    /*gap: 10px; /* da un espaciado a todos los elementos de la grilla columns grid para dar espacio a las columnas o row grid para las filas*/
-    width: 25vw;
-    height: 70vh;
-    margin: 4% auto;
-    border-radius: 20px;
-    } 
-    .container .border
-    {
-        border-top-left-radius: 5%;
-        border-top-right-radius: 5%;
-        background-image: url(img/santiago2_ccexpress.jpeg);
-        background-repeat: repeat;
-    }
-    .border  img
-    {
-        width: 8vw;
-        height: 13vh;
-        border-radius: 50%;
-        position: relative;
-        top: 65%;
-        margin-left: 6%; 
-    }
-    
-    .name
-    {
-        padding-top: 10%;
-        font-size: 25px;
-    }
-    .img
-    {
-        display: grid;
-        grid-template-columns: 45% 55%;
-        padding-top:5%;
-        padding-left: 27%;
-    
-    }
-    .social h4
-    {
-       
-        margin-top: 0;
-        margin-bottom: 0;
-        margin-left: 2%;
-        font-size: 25px;
-    }
-    .social p
-    {
-        margin-left: 2%;
-        margin-right: 2%;
-        text-align: justify;
-        font-size: 15px;
-    }
-}
-@media (min-width: 750px) and (max-width: 920px)
-{
-    .name
-    {
-        font-size: 15px;
-    }
-    .social h4
-    {
-        font-size: 15px;
-    }
-    .social p
-    {
-        font-size: 10px;
-    }
-
-    
-}
-
-@media (min-width: 480px) and (max-width: 750px) 
-{
-    .container
-    {
-        /* repeat(cantidad, valor) minmax(valor minimo, valor maximo)*/
-    display: grid;/* trabaja como grilla puede contener columnas y filas*/
-    /*grid-template-columns: 100%; /* crea la cantidad de columnas con el porcentaje o px*/
-    grid-template-rows:25% 35% 40%; /*da el tamaño indicado a las filas*/
-    /*gap: 10px; /* da un espaciado a todos los elementos de la grilla columns grid para dar espacio a las columnas o row grid para las filas*/
-    width: 50vw;
-    height: 60vh;
-    margin: 5% auto;
-    border-radius: 20px;
-    } 
-    .border  img
-    {
-        width: 20vw;
-        height: 10vh;
-        border-radius: 50%;
-        position: relative;
-        top: 65%;
-        left: 21%; 
-    }
-    .name h4
-    {
-        margin-top: 0;
-        font-size: 18px;
-        text-align: center;
-        
-    }
-    .social h4
-    {
-        margin-top: 0;
-        margin-bottom: 0;
-        margin-left: 2%;
-        font-size: 18px;
-    }
-    .social p
-    {
-        margin-left: 2%;
-        margin-right: 2%;
-        text-align: justify;
-        font-size: 10px;
-    }
-    .img
-    {
-        display: grid;
-        grid-template-columns: 45% 55%;
-        padding-top:5%;
-        padding-left: 30%;  
-    }
-}
-@media (min-width: 300px) and (max-width: 480px) 
-{
-    .container
-    {
-        /* repeat(cantidad, valor) minmax(valor minimo, valor maximo)*/
-        display: grid;/* trabaja como grilla puede contener columnas y filas*/
-        /*grid-template-columns: 100%; /* crea la cantidad de columnas con el porcentaje o px*/
-        grid-template-rows:25% 35% 40%; /*da el tamaño indicado a las filas*/
-        /*gap: 10px; /* da un espaciado a todos los elementos de la grilla columns grid para dar espacio a las columnas o row grid para las filas*/
-        width: 90vw;
-        height: 60vh;
-        margin: 5% auto;
-        border-radius: 20px;
-        position: relative;
-    } 
-    .border  img
-    {
-        width: 30vw;
-        height: 11vh;
-        border-radius: 50%;
-        position: relative;
-        top: 60%;
-        left: 25%; 
-    }
-    .name h4
-    {
-        margin-top:0;
-        text-align: center;
-        
-        font-size: 15px;
-    }
-    .social h4
-    {
-        margin-top: 0;
-        margin-bottom: 0;
-        margin-left: 2%;
-        font-size: 18px;
-    }
-    .social p
-    {
-        margin-left: 2%;
-        margin-right: 2%;
-        text-align: justify;
-        font-size: 12px;
-    }
-    .img
-    {
-        display: grid;
-        grid-template-columns: 45% 55%;
-        padding-top:5%;
-        padding-left: 30%;  
-    }
-}
