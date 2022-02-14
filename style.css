@@ -14,7 +14,7 @@ body
    grid-template-rows:25% 35% 40%; /*da el tamaño indicado a las filas*/
    /*gap: 10px; /* da un espaciado a todos los elementos de la grilla columns grid para dar espacio a las columnas o row grid para las filas*/
    width: 30vw;
-   height: 50vW;
+   height: 80vh;
    margin: 1.5% auto;
    border-radius: 20px;
 } 
@@ -31,12 +31,12 @@ body
 }
 .border  img
 {
-    width: 13vw;
-    height: 13vw;
+    width: 12vw;
+    height: 14vh;
     border-radius: 50%;
-    position: absolute;
-    margin-top: 5.5%;
-    margin-left: 8.5%; 
+    position: relative;
+    top: 65%;
+    left: 29%; 
 }
 .dates
 {
@@ -47,16 +47,19 @@ body
 {
     font-size: 20px;
     font-weight: bold;
-    padding-top: 22%;
-    padding-left: 29%;
+    padding-top: 18%;
+   
+}
+.name h4
+{
+    text-align: center;
 }
 .img
 {
     display: grid;
     grid-template-columns: 45% 55%;
     padding-top:5%;
-    padding-left: 25%;
-    
+    padding-left: 25%;  
 }
 .dates img
 {
@@ -109,8 +112,8 @@ body
     /*grid-template-columns: 100%; /* crea la cantidad de columnas con el porcentaje o px*/
     grid-template-rows:25% 35% 40%; /*da el tamaño indicado a las filas*/
     /*gap: 10px; /* da un espaciado a todos los elementos de la grilla columns grid para dar espacio a las columnas o row grid para las filas*/
-    width: 20vw;
-    height: 35vW;
+    width: 25vw;
+    height: 70vh;
     margin: 4% auto;
     border-radius: 20px;
     } 
@@ -123,18 +126,17 @@ body
     }
     .border  img
     {
-        width: 7vw;
-        height: 7vw;
+        width: 8vw;
+        height: 13vh;
         border-radius: 50%;
-        position: absolute;
-        margin-top: 5%;
+        position: relative;
+        top: 65%;
         margin-left: 6%; 
     }
     
     .name
     {
-        padding-top: 22%;
-        padding-left: 22%;
+        padding-top: 10%;
         font-size: 25px;
     }
     .img
@@ -161,6 +163,23 @@ body
         font-size: 15px;
     }
 }
+@media (min-width: 750px) and (max-width: 920px)
+{
+    .name
+    {
+        font-size: 15px;
+    }
+    .social h4
+    {
+        font-size: 15px;
+    }
+    .social p
+    {
+        font-size: 10px;
+    }
+
+    
+}
 
 @media (min-width: 480px) and (max-width: 750px) 
 {
@@ -172,31 +191,32 @@ body
     grid-template-rows:25% 35% 40%; /*da el tamaño indicado a las filas*/
     /*gap: 10px; /* da un espaciado a todos los elementos de la grilla columns grid para dar espacio a las columnas o row grid para las filas*/
     width: 50vw;
-    height: 80vW;
+    height: 60vh;
     margin: 5% auto;
     border-radius: 20px;
     } 
     .border  img
     {
-        width: 25vw;
-        height: 25vw;
+        width: 20vw;
+        height: 10vh;
         border-radius: 50%;
-        position: absolute;
-        margin-top: 5%;
-        margin-left: 13%; 
+        position: relative;
+        top: 65%;
+        left: 21%; 
     }
-    .name
+    .name h4
     {
-        padding-top: 20%;
-        padding-left: 20%;
-        font-size: 20px;
+        margin-top: 0;
+        font-size: 18px;
+        text-align: center;
+        
     }
     .social h4
     {
         margin-top: 0;
         margin-bottom: 0;
         margin-left: 2%;
-        font-size: 20px;
+        font-size: 18px;
     }
     .social p
     {
@@ -204,6 +224,13 @@ body
         margin-right: 2%;
         text-align: justify;
         font-size: 10px;
+    }
+    .img
+    {
+        display: grid;
+        grid-template-columns: 45% 55%;
+        padding-top:5%;
+        padding-left: 30%;  
     }
 }
 @media (min-width: 300px) and (max-width: 480px) 
@@ -216,24 +243,26 @@ body
         grid-template-rows:25% 35% 40%; /*da el tamaño indicado a las filas*/
         /*gap: 10px; /* da un espaciado a todos los elementos de la grilla columns grid para dar espacio a las columnas o row grid para las filas*/
         width: 90vw;
-        height: 130vW;
+        height: 60vh;
         margin: 5% auto;
         border-radius: 20px;
+        position: relative;
     } 
     .border  img
     {
         width: 30vw;
-        height: 30vw;
+        height: 11vh;
         border-radius: 50%;
-        position: absolute;
-        margin-top: 16%;
-        margin-left: 29%; 
+        position: relative;
+        top: 60%;
+        left: 25%; 
     }
-    .name
+    .name h4
     {
-        padding-top: 19%;
-        padding-left: 25%;
-        font-size: 20px;
+        margin-top:0;
+        text-align: center;
+        
+        font-size: 15px;
     }
     .social h4
     {
@@ -248,5 +277,12 @@ body
         margin-right: 2%;
         text-align: justify;
         font-size: 12px;
+    }
+    .img
+    {
+        display: grid;
+        grid-template-columns: 45% 55%;
+        padding-top:5%;
+        padding-left: 30%;  
     }
 }
